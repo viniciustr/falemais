@@ -1,0 +1,22 @@
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="DDD">
+    <span class="input-group-btn">
+        {{#bs-button type="primary" action="openModal"}}
+        <i class="glyphicon glyphicon-plus"></i>
+        {{/bs-button}}
+    </span>
+</div>
+
+{{#bs-modal title="Selecione uma cidade" open=modalToggle footer=false}}
+<table class="table table-bordered table-hover">
+    <tbody>
+        {{#each cities as |city|}}
+        <tr>
+            <td>
+                {{city.ddd}} - {{city.city}}
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/bs-modal}}
