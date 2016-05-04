@@ -13,3 +13,8 @@
 .fixed-width-270 {
     width: 270px;
 }
+
+.clickable { 
+    cursor: pointer;
+    cursor: hand;
+}

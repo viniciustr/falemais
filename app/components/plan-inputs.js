@@ -1,11 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-    init() {
-        this._super();
-        this.totalMinutos = 0;
-        this.dddOrigem = "";
-        this.dddDestino = "";
-    },
-    actions: {}
+    actions: {
+        totalMinutos: "",
+        dddOrigem: "",
+        dddDestino: "",
+        originChanged(ddd) {
+            console.log("origem " + ddd);
+            this.set("dddOrigem", ddd);
+        },
+        destinationChanged(ddd) {
+            console.log("destino " + ddd);
+            this.set("dddDestino", ddd);
+        }
+    }
 });

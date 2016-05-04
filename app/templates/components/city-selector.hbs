@@ -1,5 +1,6 @@
+<label>{{labelText}}</label>
 <div class="input-group">
-    <input type="text" class="form-control" placeholder="DDD">
+    {{input class="form-control" placeholder="DDD" value=selectedDDD}}
     <span class="input-group-btn">
         {{#bs-button type="primary" action="openModal"}}
         <i class="glyphicon glyphicon-plus"></i>
@@ -12,7 +13,7 @@
     <tbody>
         {{#each cities as |city|}}
         <tr>
-            <td>
+            <td {{action "selectDDD" city.ddd }} class="clickable">
                 {{city.ddd}} - {{city.city}}
             </td>
         </tr>
