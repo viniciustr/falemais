@@ -15,11 +15,6 @@ export default JSONAPISerializer.extend({
         }
         
         delete payload.total;
-        
-        
-        console.log(payload);
-        console.log(payload.data[0].type);
-
         return this._super(store, primaryModelClass, payload, id, requestType);
     }
 });
