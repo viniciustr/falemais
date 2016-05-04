@@ -6,11 +6,11 @@ export default Ember.Component.extend({
         dddOrigem: "",
         dddDestino: "",
         originChanged(ddd) {
-            console.log("origem " + ddd);
+            //console.log("origem " + ddd);
             this.set("dddOrigem", ddd);
         },
         destinationChanged(ddd) {
-            console.log("destino " + ddd);
+            //console.log("destino " + ddd);
             this.set("dddDestino", ddd);
         }
     }
