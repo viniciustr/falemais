@@ -9,7 +9,7 @@ const Validations = buildValidations({
             validator("format", {
                 allowBlank: true,
                 regex: /^0?[1-9]{2}$/,
-                message: "Digite o DDD com ou sem zero."
+                message: "Digite o DDD."
             })
         ]
     }

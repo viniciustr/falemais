@@ -1,4 +1,15 @@
-{{#each plans as |p|}}
-    <p>{{p.plan}}</p>
-    <p>R$22,50</p>
-{{/each}}
+<div class="container-fluid">
+    <div class="col-md-offset-2"></div>
+    {{#each plans as |p index|}}
+        <div class="panel panel-default col-xs-12 col-sm-6 col-md-2 {{if index "" "col-md-offset-2"}}">
+            <div class="panel-body">
+                <h4 class="text-center">
+                    {{p.plan}}
+                </h4>
+                <div class="text-center">
+                    R$&nbsp;<span class="text-large">22</span><span>,50</span>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

@@ -18,3 +18,7 @@
     cursor: pointer;
     cursor: hand;
 }
+
+.text-large {
+    font-size: 24pt;
+}
