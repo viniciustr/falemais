@@ -3,10 +3,15 @@
     {{input class="form-control" placeholder="DDD" value=selectedDDD}}
     <span class="input-group-btn">
         {{#bs-button type="primary" action="openModal"}}
-        <i class="glyphicon glyphicon-plus"></i>
+            <i class="glyphicon glyphicon-plus"></i>
         {{/bs-button}}
     </span>
 </div>
+{{#if (v-get this "selectedDDD" "isInvalid")}}
+    <div class="text-danger">
+        {{v-get this "selectedDDD" "message"}}
+    </div>
+{{/if}}
 
 {{#bs-modal title="Selecione uma cidade" open=modalToggle footer=false}}
 <table class="table table-bordered table-hover">

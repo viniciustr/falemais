@@ -1,16 +1,32 @@
 import Ember from 'ember';
+import { validator, buildValidations } from 'ember-cp-validations';
 
-export default Ember.Component.extend({
+const Validations = buildValidations({
+    totalMinutos: {
+        description: "Minutos",
+        debounce: 500,
+        validators: [
+            validator("number", {
+                allowString: true,
+                allowBlank: true,
+                integer: true,
+                positive: true,
+                lte: 2000,
+                message: "Digite o total de minutos."
+            })
+        ]
+    }
+});
+
+export default Ember.Component.extend(Validations, {
     actions: {
-        totalMinutos: "",
+        totalMinutos: 0,
         dddOrigem: "",
         dddDestino: "",
         originChanged(ddd) {
-            //console.log("origem " + ddd);
             this.set("dddOrigem", ddd);
         },
         destinationChanged(ddd) {
-            //console.log("destino " + ddd);
             this.set("dddDestino", ddd);
         }
     }
