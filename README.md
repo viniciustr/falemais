@@ -32,6 +32,13 @@ Exemplos:
 * `ember generate component city-selector`: para criar os arquivos do componente de seleção de cidades.
 * `ember generate serializer plan`: para criar o serializador que normaliza o conteúdo da API fornecida para o padrão JSONAPI.
 
+### Add-ons
+
+Neste projeto, foram utilizados alguns add-ons bastante utilizados pela comunidade Ember.js para agilizar o desenvolvimento.
+
+* [`ember-bootstrap`](http://kaliber5.github.io/ember-bootstrap/): Componentes ember.js que encapsulam muitos componentes do framework CSS Bootstrap.
+* [`ember-cp-validations`](http://offirgolan.github.io/ember-cp-validations/): Add-on para criar validadores de dados.
+
 ### Execução de testes
 
 Ainda não foram escritos os testes da aplicação.
