@@ -7,5 +7,10 @@ export default Ember.Route.extend({
             cities: this.store.findAll("city"),
             plans: this.store.findAll("plan")
         });
+    },
+    actions: {
+        error(error, transition) {
+            return this.transitionTo('error');
+        }
     }
 });
