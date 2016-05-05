@@ -2,6 +2,7 @@ import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
 
 export default Model.extend({
-    plan: attr(),
-    time: attr("number")
+    origin: attr(),
+    destiny: attr(),
+    price: attr()
 });
