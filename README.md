@@ -1,13 +1,15 @@
 # FaleMais
 
-Esta projeto é uma prova de conceito de uma aplicação web front-end em Ember.js.
+Este projeto é uma prova de conceito de uma aplicação web front-end para exposição dos planos FaleMais da ScupTel.
+
+Trata-se de uma aplicação Ember.js com layout feito com Twitter Bootstrap.
 
 ## Pré-requisitos
 
 Você vai precisar ter os seguintes programas instalados em sua máquina antes de começar:
 
 * [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
+* [Node.js](http://nodejs.org/) (com NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
