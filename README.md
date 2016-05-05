@@ -1,11 +1,10 @@
-# Falemais
+# FaleMais
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Esta projeto é uma prova de conceito de uma aplicação web front-end em Ember.js.
 
-## Prerequisites
+## Pré-requisitos
 
-You will need the following things properly installed on your computer.
+Você vai precisar ter os seguintes programas instalados em sua máquina antes de começar:
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -13,37 +12,39 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Installation
+## Instalação
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* Descompacte o conteúdo do arquivo .ZIP em um novo diretório
+* Mude para o novo diretório
+* `npm install` (linha de comando)
+* `bower install` (linha de comando)
 
-## Running / Development
+## Execução / Desenvolvimento
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* `ember server` (via linha de comando dentro da pasta do projeto)
+* Abra a aplicação em [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+### Geradores de código
 
-Make use of the many generators for code, try `ember help generate` for more details
+Durante o desenvolvimento do projeto, foram utilizados muitos geradores automáticos de código "boilerplate" para acelerar o desenvolvimento.
 
-### Running Tests
+Exemplos:
+* `ember generate component city-selector`: para criar os arquivos do componente de seleção de cidades.
+* `ember generate serializer plan`: para criar o serializador que normaliza o conteúdo da API fornecida para o padrão JSONAPI.
 
-* `ember test`
-* `ember test --server`
+### Execução de testes
 
-### Building
+Ainda não foram escritos os testes da aplicação.
+
+* `ember test` (via linha de comando dentro da pasta do projeto)
+* `ember test --server` (via linha de comando dentro da pasta do projeto)
+
+### Build da aplicação para deploy
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
+## Links úteis
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://ember-cli.com/)
