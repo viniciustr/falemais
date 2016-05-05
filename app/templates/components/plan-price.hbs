@@ -4,7 +4,11 @@
             {{name}}
         </h4>
         <div class="text-center">
+            {{#if precoFinal}}
             R$&nbsp;<span class="text-large">{{precoInteiro}}</span><span>,{{precoCentavos}}</span>
+            {{else}}
+            <span class="text-large">-</span>
+            {{/if}}
         </div>
     </div>
 </div>

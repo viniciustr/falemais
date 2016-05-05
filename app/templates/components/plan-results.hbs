@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="col-md-offset-2"></div>
     {{#each plans as |p index|}}
-        {{plan-price name=p.plan index=index }}
+        {{plan-price name=p.plan totalTime=p.time prices=prices factor="1.1" dddOrigem=dddOrigem dddDestino=dddDestino minutos=minutos index=index }}
     {{/each}}
-    {{plan-price name="Normal" index=plans.length }}
+    {{plan-price name="Normal" totalTime="0" prices=prices factor="1" dddOrigem=dddOrigem dddDestino=dddDestino minutos=minutos index=plans.length }}
 </div>

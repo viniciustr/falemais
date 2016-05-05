@@ -25,7 +25,9 @@ export default Ember.Component.extend(Validations, {
         selectDDD(ddd) {
             this.set("selectedDDD", ddd);
             this.set("modalToggle", false);
-            this.get('onSelection')(this.selectedDDD);
+        },
+        changedDDD() {
+            console.log("changed");
         }
     }
 });

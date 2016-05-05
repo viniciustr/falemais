@@ -11,7 +11,6 @@ const Validations = buildValidations({
                 allowBlank: true,
                 integer: true,
                 positive: true,
-                lte: 2000,
                 message: "Digite o total de minutos."
             })
         ]
@@ -19,10 +18,10 @@ const Validations = buildValidations({
 });
 
 export default Ember.Component.extend(Validations, {
+    totalMinutos: "",
+    dddOrigem: "",
+    dddDestino: "",
     actions: {
-        totalMinutos: 0,
-        dddOrigem: "",
-        dddDestino: "",
         originChanged(ddd) {
             this.set("dddOrigem", ddd);
         },

@@ -4,11 +4,11 @@
     <div class="panel panel-default col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 pad-top pad-bottom">
         <div class="panel-body">
             <div class="col-xs-12 col-md-4">
-                {{city-selector labelText="Origem" cities=cities onSelection=(action "originChanged")}}
+                {{city-selector labelText="Origem" cities=cities selectedDDD=dddOrigem}}
             </div>
 
             <div class="col-xs-12 col-md-4">
-                {{city-selector labelText="Destino" cities=cities onSelection=(action "destinationChanged")}}
+                {{city-selector labelText="Destino" cities=cities selectedDDD=dddDestino}}
             </div>
 
             <div class="col-xs-12 col-md-4">
@@ -23,4 +23,3 @@
         </div>
     </div>
 </div>
-
